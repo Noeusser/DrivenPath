@@ -2,7 +2,7 @@ CREATE TABLE
 	silver_layer.dim_person AS
 SELECT
 	unique_id,
-	person_name,
+	personal_name,
 	user_name,
 	email,
 	phone,
