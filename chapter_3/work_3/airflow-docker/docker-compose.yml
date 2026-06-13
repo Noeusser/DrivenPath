@@ -290,4 +290,4 @@ services:
 
 volumes:
   postgres-db-volume:
-  work_3_postgres-db-volume:
+  work-3-postgres-db-volume:
