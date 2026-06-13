@@ -92,3 +92,11 @@
 18:22:24.708814 [info ]: Loading profiles.yml
 18:22:25.330907 [info ]: Loading profiles.yml
 18:22:25.739116 [info ]: Loading profiles.yml
+==================== 2026-06-13T18:23:48.455598Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-13T18:23:48.461634Z | af63626a-54a8-412c-a9de-e3f0566d929b ====================
+18:23:48.462210 [info ]: Starting dbt LSP server
+18:23:48.462822 [info ]: Connecting to LSP client on port 8000
+18:23:48.466647 [info ]: Successfully connected to LSP client
+18:23:48.466689 [info ]: Creating LSP service...
+18:23:48.563037 [info ]: Creating LSP server...
+18:23:48.563064 [info ]: Starting LSP server...
