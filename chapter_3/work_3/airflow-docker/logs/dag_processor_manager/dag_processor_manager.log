@@ -9560,3 +9560,6 @@ File Path                                                                       
 [2026-06-13T18:54:20.997+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
 [2026-06-13T18:54:20.998+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
 [2026-06-13T18:54:21.008+0000] {manager.py:824} INFO - There are 0 files in /opt/airflow/dags
+[2026-06-13T18:59:21.964+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-06-13T18:59:21.971+0000] {manager.py:824} INFO - There are 0 files in /opt/airflow/dags
+[2026-06-13T19:01:13.854+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
