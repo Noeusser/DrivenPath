@@ -1,3 +1,5 @@
+
+
 # Definir los argumentos predeterminados para DAG
 default_args = {
     'owner': 'airflow',
@@ -44,7 +46,7 @@ create_raw_table_task = SQLExecuteQueryOperator(
             phone VARCHAR(100), 
             mac_address VARCHAR(100),
             ip_address VARCHAR(100),
-            iban VARCHAR(100),
+            clabe VARCHAR(100),
             accessed_at TIMESTAMP,
             session_duration INT,
             download_speed INT,
@@ -53,7 +55,7 @@ create_raw_table_task = SQLExecuteQueryOperator(
             unique_id VARCHAR(100)
         );
     """,
-    dag=dag
+    dag=dag,
 )
 
 # Definir la tarea de cargar datos CSV en la tabla
@@ -64,13 +66,14 @@ load_raw_data_task = SQLExecuteQueryOperator(
     sql="""
     COPY driven_raw.raw_batch_data(
     person_name, user_name, email, personal_number, birth_date,
-    address, phone, mac_address, ip_address, iban, accessed_at,
+    address, phone, mac_address, ip_address, clabe, accessed_at,
     session_duration, download_speed, upload_speed, consumed_traffic, unique_id
     ) 
     FROM '/opt/airflow/data/raw_data.csv' 
     DELIMITER ',' 
     CSV HEADER;
     """
+    dag=dag,
 )
 
 # Definir la tarea de ejecución de modelos dbt de puesta en escena
