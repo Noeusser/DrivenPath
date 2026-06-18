@@ -4,8 +4,6 @@ from airflow.operators.python import PythonOperator #type:ignore
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from datetime import datetime
 
-from driven_data_extraction import save_raw_data  # type: ignore # importa tu función del otro archivo
-
 # Definir los argumentos predeterminados para DAG
 default_args = {
     'owner': 'airflow',
