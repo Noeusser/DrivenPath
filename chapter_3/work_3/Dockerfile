@@ -1,5 +1,5 @@
 # Use the official Airflow image as a template.
-FROM apache/airflow:3.2.2
+FROM apache/airflow:2.10.2
 
 # Switch to airflow user to install packages.
 USER airflow
