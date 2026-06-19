@@ -149,7 +149,7 @@ def save_raw_data():
     output_file = f"chapter_2/evidence/batch_{date.today()}.csv"
     write_to_csv()
     add_id()
-    update_datetime()
+    update_datetime("next")
     logging.info(f"finish batch processing {date.today()}.")
 
     # Define number of records: first run - 10_372; next runs random number.
