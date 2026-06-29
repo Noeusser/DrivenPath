@@ -218,7 +218,7 @@ create_raw_table_task = SQLExecuteQueryOperator(
             email VARCHAR(100),
             personal_number NUMERIC, 
             birth_date VARCHAR(100), 
-            address VARCHAR(100),
+            address VARCHAR(500),
             phone VARCHAR(100), 
             mac_address VARCHAR(100),
             ip_address VARCHAR(100),
