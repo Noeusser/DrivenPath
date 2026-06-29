@@ -13,7 +13,7 @@
 WITH source_data AS (
     SELECT
         unique_id,
-        iban
+        clabe
     FROM
         "airflow"."driven_raw"."raw_batch_data"
 )
