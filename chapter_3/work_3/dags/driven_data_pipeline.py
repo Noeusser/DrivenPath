@@ -150,27 +150,27 @@ def save_raw_data():
     write_to_csv()
     add_id()
     update_datetime("next")
-    logging.info(f"finish batch processing {date.today()}.")
+    # logging.info(f"finish batch processing {date.today()}.")
 
     # Define number of records: first run - 10_372; next runs random number.
-    if str(date.today()) == "2026-05-29":
-        records = random.randint(100_372, 100_372)
-        run_type = "first"
-    else:
-        records = random.randint(0, 1_101)
-        run_type = "next"
+    # if str(date.today()) == "2026-05-29":
+    #     records = random.randint(100_372, 100_372)
+    #     run_type = "first"
+    # else:
+    #     records = random.randint(0, 1_101)
+    #     run_type = "next"
     
-    # Generate and write records to the CSV.
-    write_to_csv(f"{output_file}", records)
+    # # Generate and write records to the CSV.
+    # write_to_csv(f"{output_file}", records)
 
-    # Add UUID to dataset.
-    add_id(output_file)
+    # # Add UUID to dataset.
+    # add_id(output_file)
 
-    # Update the timestamp.
-    update_datetime(output_file, run_type)
+    # # Update the timestamp.
+    # update_datetime(output_file, run_type)
 
-    # Logging ending of the process.
-    logging.info(f"Finish batch processing {date.today()}.")
+    # # Logging ending of the process.
+    # logging.info(f"Finish batch processing {date.today()}.")
 
 
 if __name__ == "__main__":
@@ -189,7 +189,7 @@ dag = DAG(
     default_args = default_args,
     description = 'DataDriven Main Pipeline',
     schedule_interval = "* 7 * * *",
-    start_date=datetime(2024, 9, 22),
+    start_date=datetime(2026, 6, 15),
     catchup= False,
 )
 
