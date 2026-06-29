@@ -16,7 +16,7 @@ WITH source_data AS (
         dp.phone, 
         da.mac_address,
         da.ip_address,
-        df.iban,
+        df.clabe,
         dd.accessed_at,
         fnu.session_duration,
         fnu.download_speed,
