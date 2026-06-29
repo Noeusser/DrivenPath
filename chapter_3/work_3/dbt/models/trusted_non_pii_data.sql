@@ -16,7 +16,7 @@ WITH source_data AS (
         '***MASKED***'  AS phone, 
         SUBSTRING(da.mac_address, 1, 5) || '*****' AS mac_address,
         SUBSTRING(da.ip_address, 1, 5) || '*****' AS ip_address,
-        SUBSTRING(df.iban, 1, 5) || '*****' AS iban,
+        SUBSTRING(df.clabe, 1, 5) || '*****' AS clabe,
         dd.accessed_at,
         fnu.session_duration,
         fnu.download_speed,

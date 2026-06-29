@@ -8,7 +8,7 @@
 WITH source_data AS (
     SELECT
         fnu.unique_id,
-        df.iban,
+        df.clabe,
         fnu.download_speed,
         fnu.upload_speed,
         fnu.session_duration,

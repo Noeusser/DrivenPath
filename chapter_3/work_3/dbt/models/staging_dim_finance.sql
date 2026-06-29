@@ -8,7 +8,7 @@
 WITH source_data AS (
     SELECT
         unique_id,
-        iban
+        clabe
     FROM
         {{ source('raw_source', 'raw_batch_data') }}
 )
